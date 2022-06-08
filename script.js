@@ -1,8 +1,8 @@
 'use strict';
 const playerEl1 = document.getElementById('name--0');
 const playerEl2 = document.getElementById('name--1');
-// playerEl1.textContent = prompt('Player 1 name:');
-// playerEl2.textContent = prompt('Player 2 name:');
+playerEl1.textContent = prompt('Player 1 name:');
+playerEl2.textContent = prompt('Player 2 name:');
 let activePlayerEl = document.querySelector('.player--0');
 
 const scoreEl1 = document.getElementById('score--0');
