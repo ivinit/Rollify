@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=1024, initial-scale=1.0" />
+  <meta name="viewport" content="width=1024, initial-scale=0.25" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="logo.webp" type="image/x-icon">
@@ -34,6 +34,21 @@
     <!-- <button class="btn btn--roll">🎲 Roll dice</button> -->
     <button class="btn btn--hold">📥 Hold</button>
   </main>
+  <div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <h2 style="color:red;">! Please pinch zoom out to see properly</h2>
+    <br>
+    <h1>Enter Player's Name: </h1>
+    <div>
+      <input style="width: 20vw; margin:15px ;float:left;height: 35px; font-size: large; padding: 5px;" type="text"
+        class="playerName1" placeholder="Player 1">
+      <input style="width: 20vw; margin:15px ; float: right;height: 35px;font-size: large; padding: 5px;" type="text"
+        class="playerName2" placeholder="Player 2">
+
+    </div>
+    <button id="okay" style="margin:10%; padding: 10px;">OK</button>
+  </div>
+  <div class="overlay hidden"></div>
   <script src="script.js"></script>
 </body>
 

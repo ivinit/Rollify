@@ -1,8 +1,31 @@
 'use strict';
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector('.close-modal');
+const okBtn = document.getElementById('okay');
+// const btnOpenModal = document.querySelector('.show-modal');
+const showModal = function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+// btnOpenModal.addEventListener('click', showModal);
+const closeModal = function () {
+  console.log();
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+btnCloseModal.addEventListener('click', closeModal);
+
+showModal();
 const playerEl1 = document.getElementById('name--0');
 const playerEl2 = document.getElementById('name--1');
-playerEl1.textContent = prompt('Player 1 name:');
-playerEl2.textContent = prompt('Player 2 name:');
+okBtn.addEventListener('click', function () {
+  playerEl1.textContent = document.querySelector('.playerName1').value;
+  playerEl2.textContent = document.querySelector('.playerName2').value;
+  closeModal();
+  // playerEl2.textContent = prompt('Player 2 name:');
+});
+
 let activePlayerEl = document.querySelector('.player--0');
 
 const scoreEl1 = document.getElementById('score--0');
