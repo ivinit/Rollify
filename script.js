@@ -80,7 +80,7 @@ diceImg.addEventListener('click', function () {
     // diceImg.style.transitionDuration = '2s';
     diceImg.style.transform = `rotate(${rotation}deg)`;
     sleep(300).then(() => {
-      diceImg.src = `dice-${dice}.png`;
+      diceImg.src = `src/dice-${dice}.webp`;
       // diceImg.classList.remove('hidden');
     });
 
